@@ -1,0 +1,42 @@
+nav{
+  padding: 20px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 64px;
+    height: 64px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    a{
+      font-size: 36px;
+      &:hover{
+        cursor: pointer;
+        color: orangered;
+      }
+    }
+  }
+  .phone-btn{
+    display: flex;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 7px 0px 5px;
+    background-color: rgb(161, 44, 1);
+    border-radius: 16px;
+    margin-left: 10px;
+    img{
+     width: 36px;
+    }
+    span{
+      font-size: 36px;
+    }
+  }
+}
