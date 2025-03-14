@@ -1,8 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
 *{
   margin: 0;
   font-family: 'Raleway';
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+$my-color: rgb(227, 5, 5); 
+// declaring a variable to use in other components
+// @mixin borderStyling() { //this how we can create function in css to use it multiple times
+//   border: 3px solid white;
+//   border-radius: 16px;
+// }
+@mixin borderStyling($b-style) {
+  //also we can pass args both ways are possible
+  border: 3px $b-style white;
+  border-radius: 16px;
+}
+
+// @mixin dFlex() { //1st to define way
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+// @mixin dFlex($js-content, $alin-Item) {//2nd way to define we have to pass both args when calling
+//   display: flex;
+//   justify-content: $js-content;
+//   align-items: $alin-Item;
+// }
+@mixin dFlex($js-content, $alin-Item: center) {
+  //3rdway we can set default value then second arg no need to pass
+  //2nd way to define
+  display: flex;
+  justify-content: $js-content;
+  align-items: $alin-Item;
+}
+
+
+
 
 /* raleway-300 - latin */
 @font-face {
